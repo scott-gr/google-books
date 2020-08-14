@@ -3,47 +3,43 @@ import React, { Component } from 'react';
 class Home extends Component {
   render() {
     return (
-      <div>
-        <section class="hero is-primary is-medium">
+      <div class="section hero is-primary is-small">
+        <section class="hero is-primary is-small">
 
           <div class="hero-head">
             <nav class="navbar">
               <div class="container">
+
                 <div class="navbar-brand">
-                  <a class="navbar-item">
-                    <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
-                  
                   <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                     <span></span>
                     <span></span>
                     <span></span>
                   </span>
-                </a>
+                </div>
+
                 <div id="navbarMenuHeroA" class="navbar-menu">
                   <div class="navbar-end">
                     <a class="navbar-item is-active">
-                      Home
+                      Search
                     </a>
                     <a class="navbar-item">
-                      Examples
-                    </a>
-                    <a class="navbar-item">
-                      Documentation
+                      Saved Books
                     </a>
                     <span class="navbar-item">
                       <a class="button is-primary is-inverted">
                         <span class="icon">
                           <i class="fab fa-github"></i>
                         </span>
-                        <span>Download</span>
+                        <span>View on github</span>
                       </a>
                     </span>
                   </div>
                 </div>
               </div>
-            </div>
             </nav>
           </div>
+        
 
 
           <div class="hero-body">
@@ -55,22 +51,6 @@ class Home extends Component {
                 Subtitle
               </h2>
             </div>
-          </div>
-
-          <!-- Hero footer: will stick at the bottom -->
-          <div class="hero-foot">
-            <nav class="tabs">
-              <div class="container">
-                <ul>
-                  <li class="is-active"><a>Overview</a></li>
-                  <li><a>Modifiers</a></li>
-                  <li><a>Grid</a></li>
-                  <li><a>Elements</a></li>
-                  <li><a>Components</a></li>
-                  <li><a>Layout</a></li>
-                </ul>
-              </div>
-            </nav>
           </div>
         </section>
       </div>
