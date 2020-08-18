@@ -1,10 +1,31 @@
-import http from "./httpService";
+import http from './httpService';
 
-// function get all books
+export function getAllBooks() {
+  return http.get('https://obscure-retreat-35072.herokuapp.com/api/books');
+}
 
-//functon save book from api to db
+export function saveBook(title, authors, description, image, link) {
+  const object = {
+    title: title,
+    authors: authors,
+    description: description,
+    image: image,
+    link: link,
+  };
+  return http.post(
+    'https://obscure-retreat-35072.herokuapp.com/api/books',
+    object
+  );
+}
 
-//function get book by id
+export function getBookById(id) {
+  return http.get(
+    `https://obscure-retreat-35072.herokuapp.com/api/books/${id}`
+  );
+}
 
-//functon delete book by  id
-
+export function deleteBookById(id) {
+  return http.delete(
+    `https://obscure-retreat-35072.herokuapp.com/api/books/${id}`
+  );
+}
