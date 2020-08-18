@@ -3,6 +3,8 @@ import axios from "axios";
 import { Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import NoMatch from "./components/NoMatch/NoMatch";
+import Search from "./components/Search/Search";
+import Saved from "./components/Saved/Saved.jsx"
 
 function App() {
   useEffect(() => {
@@ -20,9 +22,10 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route component={NoMatch} />
+        <Route exact path="/search" component={Search} />
+        <Route exact path="/save" component={Saved} />
+        <Route component={NoMatch} />qq
       </Switch>
   );
 }
-
 export default App;
