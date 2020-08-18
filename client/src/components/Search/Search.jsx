@@ -85,7 +85,7 @@ class Search extends Component {
           <div class="hero-body">
             <div class="container has-text-centered">
               <h1 class="title">Google Books API Search</h1>
-              <h2 class="subtitle">find and save your books</h2>
+              <h2 class="subtitle">search for books by title</h2>
             </div>
           </div>
         </section>
